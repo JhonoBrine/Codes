@@ -46,7 +46,7 @@ games = [
     },
     {
         "game_name": "Borderlands 2",
-        "img_path": "assets/bl2_icon.png",
+        "img_path": "HelloWord/assets/bl2_icon.png",
         "game_link": "https://store.steampowered.com/app/49520/Borderlands_2/"
     },
     {
