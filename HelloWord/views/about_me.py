@@ -13,7 +13,7 @@ def show_contact_form():
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 
 with col1:
-    st.image("assets/pabroa_me.jpg", width=280)
+    st.image("HelloWord/assets/pabroa_me.jpg", width=280)
 
 with col2:
     st.title(":orange[Jhon Lorenz E. Pabroa]", anchor=False)
@@ -50,7 +50,7 @@ academic_experiences = [
         "date": "August 2024 - Present",
         "course": "Capstone and Research 2",
         "role": "Backend Developer :orange[_Java Springboot_] / Database Manager",
-        "image": "assets\Cebu_Institute_of_Technology_University_logo.png",
+        "image": "HelloWord/assets/Cebu_Institute_of_Technology_University_logo.png",
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
         "github_link": "https://github.com/satou0419/tower-of-words_repository",
@@ -60,7 +60,7 @@ academic_experiences = [
         "school": "Cebu Institute of Technology - University",
         "date": "January 2024 - May 2024",
         "course": "Capstone and Research 1",
-        "image": "assets\Cebu_Institute_of_Technology_University_logo.png",
+        "image": "HelloWord/assets/Cebu_Institute_of_Technology_University_logo.png",
         "role": "Backend Developer :orange[_Java Springboot_] / Database Manager",
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
@@ -71,7 +71,7 @@ academic_experiences = [
         "school": "Cebu Institute of Technology - University",
         "date": "August 2023 - December 2023",
         "course": "Industry Elective 1",
-        "image": "assets\Cebu_Institute_of_Technology_University_logo.png",
+        "image": "HelloWord/assets/Cebu_Institute_of_Technology_University_logo.png",
         "role": "Frontend Developer :blue[_ReactJS_]",
         "link": "https://www.cit.edu",
         "project": "ParkCIT",
