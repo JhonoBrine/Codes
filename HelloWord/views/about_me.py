@@ -1,6 +1,9 @@
 import streamlit as st
 from forms.contact import contact_form
+from forms.contact import add_pdf_download_button
 from styles.styles_func import styled_experience
+
+# --- Running First ---
 
 @st.dialog("Contact Me")
 def show_contact_form():
@@ -11,19 +14,25 @@ def show_contact_form():
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 
 with col1:
-    st.image("assets/pabroa_me.jpg", width=280, )
+    st.image("assets/pabroa_me.jpg", width=280)
 
 with col2:
-    st.title(":green[Jhon Lorenz E. Pabroa]", anchor=False)
+    st.title(":orange[Jhon Lorenz E. Pabroa]", anchor=False)
     st.write("\n")
     st.header("BS - Information Technology 4th Year Student", anchor=False, help="Cebu Institute of Technology - University")
 
     st.write(
         "_Strives to learn more about IT-related areas despite surface level information._"
     )
+    cols1, cols2 = st.columns([1, 1])
 
-    if st.button("✉️ Contact Me"):
-        show_contact_form()
+    with cols1:
+        if st.button("✉️ Contact Me"):
+            show_contact_form()
+    with cols2:
+        add_pdf_download_button("assets/resume.pdf")
+
+    
 
 # --- SUMMARY ---
 
@@ -41,7 +50,7 @@ academic_experiences = [
         "school": "Cebu Institute of Technology - University",
         "date": "August 2024 - Present",
         "course": "Capstone and Research 2",
-        "role": "Backend Developer / Database Manager",
+        "role": "Backend Developer :orange[_Java Springboot_] / Database Manager",
         "image": "assets\Cebu_Institute_of_Technology_University_logo.png",
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
@@ -53,11 +62,22 @@ academic_experiences = [
         "date": "January 2024 - May 2024",
         "course": "Capstone and Research 1",
         "image": "assets\Cebu_Institute_of_Technology_University_logo.png",
-        "role": "Backend Developer / Database Manager",
+        "role": "Backend Developer :orange[_Java Springboot_] / Database Manager",
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
         "github_link": "https://github.com/satou0419/tower-of-words_repository",
         "web_link": "https://tower-of-words.vercel.app/"
+    },
+    {
+        "school": "Cebu Institute of Technology - University",
+        "date": "August 2023 - December 2023",
+        "course": "Industry Elective 1",
+        "image": "assets\Cebu_Institute_of_Technology_University_logo.png",
+        "role": "Frontend Developer :blue[_ReactJS_]",
+        "link": "https://www.cit.edu",
+        "project": "ParkCIT",
+        "github_link": "https://github.com/JhonoBrine/cituparkuiux",
+        "web_link": ""
     },
 ]
 
@@ -71,8 +91,8 @@ for i, experience in enumerate(academic_experiences):
         with cols[1]:
             st.markdown(f"**<span style='font-size:24px;'><a href=\"{experience['link']}\" style='text-decoration:none; color:#d33682;'>{experience['school']}</a></span>**", unsafe_allow_html=True)
             st.write(f" ##### {experience['course']}")
-            st.write(f" ###### _{experience['role']}_")
-            st.write(f"{experience['date']}")
+            st.write(f" ###### {experience['role']}")
+            st.write(f"_{experience['date']}_")
 
             col1, col2, col3 = st.columns([3, 1, 1])
 
@@ -91,3 +111,5 @@ for i, experience in enumerate(academic_experiences):
 
     if i < len(academic_experiences) - 1:
         st.divider()
+
+

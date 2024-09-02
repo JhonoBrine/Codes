@@ -1,6 +1,7 @@
 import streamlit as st
 import re
 import requests
+import time
 
 
 
@@ -44,7 +45,22 @@ def contact_form():
             data = {"email": email, "name": name, "message": message}
             response = requests.post(WEBHOOK_URL, json=data)
 
-            if response.status_code == 200:
-                st.success("Your message has been sent successfully!", icon="🚀")
-            else:
-                st.error("There was an error sending your message!", icon="😥")
+            with st.spinner('Sending 📨...🖥️'):
+                time.sleep(5)
+                if response.status_code == 200:
+                    st.success("Your message has been sent successfully!", icon="🚀")
+                else:
+                    st.error("There was an error sending your message!", icon="😥")
+
+def add_pdf_download_button(pdf_path, button_label="📄Sample Resume"):
+
+    with open(pdf_path, 'rb') as pdf_file:
+        pdf_data = pdf_file.read()
+
+    st.download_button(
+        label=button_label,
+        data=pdf_data,
+        file_name="PABROA_Sample-Resume.pdf",
+        mime="application/pdf",
+        type="primary"
+)
