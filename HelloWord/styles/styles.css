@@ -1,0 +1,50 @@
+/* styles.css */
+.experience-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.experience-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.experience-content {
+    flex-grow: 1;
+}
+
+.experience-school {
+    margin: 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.experience-course {
+    margin: 5px 0;
+    color: #555;
+}
+
+.experience-role {
+    margin: 5px 0;
+    font-style: italic;
+    color: #333;
+}
+
+.experience-date {
+    margin: 5px 0;
+    color: #777;
+}
+
+.experience-project {
+    margin: 5px 0;
+    font-style: italic;
+    color: #444;
+}

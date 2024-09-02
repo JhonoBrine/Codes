@@ -12,6 +12,8 @@ profile_page_default= st.Page(
     default=True,
 )
 
+
+
 test_only_1_page = st.Page(
     page="views/hello_world_test.py",
     title="Hello World Test",
@@ -27,13 +29,13 @@ test_only_1_page = st.Page(
 pg = st.navigation(
     {
         "Info": [profile_page_default],
-        "Test": [test_only_1_page],
+        "Testing Pages": [test_only_1_page],
     }
 )
 
 # --- SHARED ON ALL PAGES
 
-st.logo("HelloWord/assets/IndustryElective3Logo.png")
+st.logo("assets/IndustryElective3Logo.png")
 st.sidebar.text("Created by Jhon Lorenz E. Pabroa")
 st.sidebar.text("For CSIT342 - Industry Elective 3")
 
