@@ -29,7 +29,7 @@ with col2:
         if st.button("✉️ Contact Me"):
             show_contact_form()
     with cols2:
-        add_pdf_download_button("assets/resume.pdf")
+        add_pdf_download_button("HelloWord/assets/resume.pdf")
 
     
 
