@@ -21,7 +21,8 @@ st.video(video, autoplay=True)
 st.divider()
 
 st.write("This one just went inside my brain, if those are possible above... Why not this? 😉")
-input_video = st.text_input("Enter the URL of the video:")
+st.write("Enter the URL of the video!")
+input_video = st.text_input("")
 
 if input_video:
-    st.video(input_video, autoplay=True)
+    st.video(input_video)
