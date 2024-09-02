@@ -33,7 +33,7 @@ pg = st.navigation(
 
 # --- SHARED ON ALL PAGES
 
-st.logo("assets/IndustryElective3Logo.png")
+st.logo("HelloWord/assets/IndustryElective3Logo.png")
 st.sidebar.text("Created by Jhon Lorenz E. Pabroa")
 st.sidebar.text("For CSIT342 - Industry Elective 3")
 
