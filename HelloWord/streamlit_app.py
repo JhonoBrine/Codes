@@ -59,12 +59,8 @@ st.logo("HelloWord/assets/IndustryElective3Logo.png")
 st.sidebar.text("Created by Jhon Lorenz E. Pabroa")
 st.sidebar.text("For CSIT342 - Industry Elective 3")
 
-st.sidebar.divider
-
 st.sidebar.link_button("GitHub Repo", "https://github.com/JhonoBrine/Codes")
 
-st.sidebar.divider
-
-st.sidebar.video("https://www.youtube.com/watch?v=RNb4bwJgNmg")
+st.sidebar.video("https://www.youtube.com/watch?v=RNb4bwJgNmg", autoplay=True)
 # -- RUN NAVIGATION ---
 pg.run()
