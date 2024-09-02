@@ -11,12 +11,12 @@ col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 
 with col1:
     st.subheader("Steam Profile")
-    st.image("assets/fuwawa_burn.png", width=135)
+    st.image("HelloWord/assets/fuwawa_burn.png", width=135)
     st.link_button("Jon's Profile", "https://steamcommunity.com/id/JonLeonardo/")
 
 with col2:
     st.subheader("Roblox Profile")
-    st.image("assets/noFilter.webp", width=150)
+    st.image("HelloWord/assets/noFilter.webp", width=150)
     st.link_button("jhonlorenz's Profile", "https://www.roblox.com/users/42846564/profile")
 
 # Creating a list of games
@@ -31,17 +31,17 @@ col1, col2 = st.columns(2)
 games = [
     {
         "game_name": "Left 4 Dead 2",
-        "img_path": "assets/l4d2_icon.png",
+        "img_path": "HelloWord/assets/l4d2_icon.png",
         "game_link": "https://store.steampowered.com/app/550/Left_4_Dead_2/"
     },
     {
         "game_name": "Terraria",
-        "img_path": "assets/terraria_icon.png",
+        "img_path": "HelloWord/assets/terraria_icon.png",
         "game_link": "https://store.steampowered.com/app/105600/Terraria/"
     },
     {
         "game_name": "Guild Wars 2",
-        "img_path": "assets/gw2_icon.png",
+        "img_path": "HelloWord/assets/gw2_icon.png",
         "game_link": "https://store.steampowered.com/app/1284210/Guild_Wars_2/"
     },
     {
@@ -51,12 +51,12 @@ games = [
     },
     {
         "game_name": "Deep Rock Galactic",
-        "img_path": "assets/drg_icon.png",
+        "img_path": "HelloWord/assets/drg_icon.png",
         "game_link": "https://store.steampowered.com/app/548430/Deep_Rock_Galactic/"
     },
     {
         "game_name": "The Killing Antidote",
-        "img_path": "assets/killingantidote.png",
+        "img_path": "HelloWord/assets/killingantidote.png",
         "game_link": "https://store.steampowered.com/app/2254890/The_Killing_Antidote/"
     },
 ]
