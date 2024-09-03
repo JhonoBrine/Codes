@@ -65,7 +65,7 @@ st.sidebar.write("\n")
 st.sidebar.write("\n")
 
 st.sidebar.write("Testing Sidebar Audio and Video with Autoplay True")
-st.sidebar.video("https://www.youtube.com/watch?v=vyAV1Z-81oU", autoplay=True)
-st.sidebar.audio("HelloWord/assets/audio/lyria_gbf-ost.m4a")
+st.sidebar.video("https://www.youtube.com/watch?v=vyAV1Z-81oU")
+st.sidebar.audio("HelloWord/assets/audio/lyria_gbf-ost.m4a", autoplay=True)
 # -- RUN NAVIGATION ---
 pg.run()
