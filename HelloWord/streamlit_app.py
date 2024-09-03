@@ -62,5 +62,6 @@ st.sidebar.text("For CSIT342 - Industry Elective 3")
 st.sidebar.link_button("GitHub Repo", "https://github.com/JhonoBrine/Codes")
 
 st.sidebar.video("https://www.youtube.com/watch?v=vyAV1Z-81oU", autoplay=True)
+st.sidebar.audio("HelloWord/assets/audio/lyria_gbf-ost.m4a")
 # -- RUN NAVIGATION ---
 pg.run()
