@@ -1,43 +1,46 @@
 import streamlit as st
+import os
 
-
+file = "D:\$FILES\SCHOOL_FILES\#Fourth_Year\First_Semester\CSIT342_Industry_Elective_3\Codes\HelloWord\streamlit_app.py"
+thisfile = os.path.abspath(file)
+if ('/' in thisfile): os.chdir(os.path.dirname(thisfile))
 
 # -- PAGE SETUP ---
 
 
 profile_1_page= st.Page(
-    page="views/about_me.py",
+    page="HelloWord/views/about_me.py",
     title="About Me",
     icon=":material/account_circle:",
     default=True,
 )
 
 profile_2_page= st.Page(
-    page="views/my_techstack.py",
+    page="HelloWord/views/my_techstack.py",
     title="Techstack",
     icon=":material/description:",
 )
 
 profile_3_page= st.Page(
-    page="views/my_hobbies.py",
+    page="HelloWord/views/my_hobbies.py",
     title="Hobbies",
     icon=":material/sports_esports:",
 )
 
 test_only_1_page = st.Page(
-    page="views/hello_world_test.py",
+    page="HelloWord/views/hello_world_test.py",
     title="Hello World Test",
     icon=":material/bug_report:",
 )
 
 test_only_2_page = st.Page(
-    page="views/video_test.py",
+    page="HelloWord/views/video_test.py",
     title="Video Test",
     icon=":material/bug_report:",
 )
 
 test_only_3_page = st.Page(
-    page="views/change_background_color_wheel.py",
+    page="HelloWord/views/change_background_color_wheel.py",
     title="Color Wheel Test",
     icon=":material/palette:",
 )

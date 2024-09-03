@@ -1,6 +1,6 @@
 import streamlit as st
-from forms.contact import contact_form
-from forms.contact import add_pdf_download_button
+from HelloWord.forms.contact import contact_form
+from HelloWord.forms.contact import add_pdf_download_button
 
 # --- Running First ---
 
