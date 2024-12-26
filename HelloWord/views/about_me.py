@@ -54,7 +54,7 @@ academic_experiences = [
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
         "github_link": "https://github.com/satou0419/tower-of-words_repository",
-        "web_link": "https://tower-of-words.vercel.app/"
+        "web_link": "https://towerofwords.online/"
     },
     {
         "school": "Cebu Institute of Technology - University",
@@ -65,7 +65,7 @@ academic_experiences = [
         "link": "https://www.cit.edu",
         "project": "Tower of Words",
         "github_link": "https://github.com/satou0419/tower-of-words_repository",
-        "web_link": "https://tower-of-words.vercel.app/"
+        "web_link": "https://towerofwords.online/"
     },
     {
         "school": "Cebu Institute of Technology - University",
