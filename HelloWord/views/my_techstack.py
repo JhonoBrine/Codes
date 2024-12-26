@@ -60,3 +60,13 @@ other_languages_3 = {
 }
 
 output_language_result(other_languages_3)
+
+st.write("##### Microsoft Office Skills")
+
+other_languages_4 = {
+    "Word": 52,
+    "Powerpoint": 45,
+    "Excel": 56
+}
+
+output_language_result(other_languages_4)
