@@ -60,7 +60,7 @@ pg = st.navigation(
 
 st.logo("HelloWord/assets/IndustryElective3Logo.png")
 st.sidebar.text("Created by Jhon Lorenz E. Pabroa")
-st.sidebar.text("For CSIT342 - Industry Elective 3")
+# st.sidebar.text("For CSIT342 - Industry Elective 3")
 
 st.sidebar.link_button("GitHub Repo", "https://github.com/JhonoBrine/Codes")
 
