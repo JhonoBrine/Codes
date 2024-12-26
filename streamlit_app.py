@@ -52,7 +52,7 @@ test_only_3_page = st.Page(
 pg = st.navigation(
     {
         "Info": [profile_1_page, profile_2_page, profile_3_page],
-        "Testing Pages": [test_only_1_page, test_only_2_page, test_only_3_page],
+        # "Testing Pages": [test_only_1_page, test_only_2_page, test_only_3_page],
     }
 )
 
@@ -66,10 +66,10 @@ st.sidebar.link_button("GitHub Repo", "https://github.com/JhonoBrine/Codes")
 
 st.sidebar.write("\n")
 
-st.sidebar.write("Testing Sidebar Audio and Video with Autoplay True")
-st.sidebar.video("https://www.youtube.com/watch?v=vyAV1Z-81oU")
+# st.sidebar.write("Testing Sidebar Audio and Video with Autoplay True")
+# st.sidebar.video("https://www.youtube.com/watch?v=vyAV1Z-81oU")
 
-st.sidebar.caption("Granblue Fantasy OST - Lyria MP3")
-st.sidebar.audio("HelloWord/assets/audio/lyria_gbf-ost.m4a", autoplay=True)
+# st.sidebar.caption("Granblue Fantasy OST - Lyria MP3")
+# st.sidebar.audio("HelloWord/assets/audio/lyria_gbf-ost.m4a", autoplay=True)
 # -- RUN NAVIGATION ---
 pg.run()
