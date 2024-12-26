@@ -61,6 +61,10 @@ other_languages_3 = {
 
 output_language_result(other_languages_3)
 
+st.write("\n")
+st.write("\n")
+st.write("\n")
+
 st.write("##### Microsoft Office Skills")
 
 other_languages_4 = {
